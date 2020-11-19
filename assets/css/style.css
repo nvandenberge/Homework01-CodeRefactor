@@ -91,25 +91,26 @@ main {
 
 /* Provides spacing, color, and height for each of the 3 sections within main tag*/
 main section {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
 }
 /* Adds larger text size and spacing for h2 elements */
 section h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 /* Sets the height for all images within section tag */
-section img {
-    max-height: 200px;
+main section img {
+  max-height: 200px;
 }
 
-.benefits {
+/* Styles and aligns element to the right of the main content in middle */
+aside {
   margin-right: 20px;
   padding: 20px;
   clear: both;
@@ -120,49 +121,20 @@ section img {
   background-color: #2589bd;
 }
 
-.benefit-lead {
+/* Adds text color and spacing to each section in aside element */
+aside section {
   margin-bottom: 32px;
   color: #ffffff;
 }
 
-.benefit-brand {
-  margin-bottom: 32px;
-  color: #ffffff;
-}
-
-.benefit-cost {
-  margin-bottom: 32px;
-  color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* Centers and adds space below each section heading within aside element */
+section h3 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.benefit-brand h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.benefit-cost h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.benefit-lead img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
-.benefit-brand img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
-.benefit-cost img {
+/* Centers and sets width for each image in aside element */
+aside img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
