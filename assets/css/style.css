@@ -30,7 +30,7 @@ span {
 }
 
 /* Styles and aligns the 3 links in right side of header */
-header div {
+header section {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
