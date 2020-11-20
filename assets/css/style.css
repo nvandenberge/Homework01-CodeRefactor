@@ -1,3 +1,4 @@
+/* Removes all padding and margins from whole page so we can start fresh */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,7 +11,7 @@ body {
 }
 
 /* Gives the header space, background and text color */
-header {
+.header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -19,18 +20,18 @@ header {
 }
 
 /* Styles the the company text in top left */
-h1 {
+.header h1 {
   display: inline-block;
   font-size: 48px;
 }
 
-/* Adds a hint of gray to 'seo' characters */
-span {
+/* Adds a hint of gray to 'seo' characters in 'Horiseon' */
+.header h1 .seo {
   color: #d9dcd6;
 }
 
-/* Styles and aligns the 3 links in right side of header */
-header section {
+/* Styles and aligns the 3 page links in right side of header */
+.header section {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
@@ -38,13 +39,13 @@ header section {
   font-size: 20px;
 }
 
-/* Removes bullet points from the list */
-ul {
+/* Removes bullet points from the unordered list elements */
+.header section ul {
   list-style-type: none;
 }
 
-/* Aligns the 3 links horizontally in the header  */
-li {
+/* Aligns the 3 links horizontally in the header and spaces them out */
+.header section ul li {
   display: inline-block;
   margin-left: 25px;
 }
@@ -83,14 +84,16 @@ p {
 }
 
 /* Aligns the content within the main element */
-main {
+.content {
   width: 75%;
   display: inline-block;
   margin-left: 20px;
 }
 
-/* Provides spacing, color, and height for each of the 3 sections within main tag*/
-main section {
+/* Provides spacing, color, and height for each of the 3 sections within main tag */
+.search-engine-optimization,
+.social-media-marketing,
+.online-reputation-management {
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
@@ -98,19 +101,24 @@ main section {
   background-color: #0072bb;
   color: #ffffff;
 }
+
+/* Sets the height for all images within section tag */
+.search-engine-optimization img,
+.online-reputation-management img,
+.social-media-marketing img {
+  max-height: 200px;
+}
+
 /* Adds larger text size and spacing for h2 elements */
-section h2 {
+.search-engine-optimization h2,
+.online-reputation-management h2,
+.social-media-marketing h2 {
   margin-bottom: 20px;
   font-size: 36px;
 }
 
-/* Sets the height for all images within section tag */
-main section img {
-  max-height: 200px;
-}
-
-/* Styles and aligns element to the right of the main content in middle */
-aside {
+/* Styles and aligns aside element to right side of page */
+.benefits {
   margin-right: 20px;
   padding: 20px;
   clear: both;
@@ -121,27 +129,33 @@ aside {
   background-color: #2589bd;
 }
 
-/* Adds text color and spacing to each section in aside element */
-aside section {
+/* Adds text color and spacing to each div in aside element */
+.benefit-lead,
+.benefit-brand,
+.benefit-cost {
   margin-bottom: 32px;
   color: #ffffff;
 }
 
-/* Centers and adds space below each section heading within aside element */
-section h3 {
+/* Centers and adds space below each h3 within aside element */
+.benefit-lead h3,
+.benefit-brand h3,
+.benefit-cost h3 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* Centers and sets width for each image in aside element */
-aside img {
+/* Centers and sets width for each image within aside element */
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
 }
 
-/* Adds space and aligns text in footer */
-footer {
+/* Adds space, font, and aligns text in footer */
+.footer {
   padding: 30px;
   clear: both;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -150,6 +164,6 @@ footer {
 }
 
 /* Controls text size for h2 element within footer tag  */
-footer h2 {
+.footer h2 {
   font-size: 20px;
 }
