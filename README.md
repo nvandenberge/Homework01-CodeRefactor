@@ -2,13 +2,20 @@
 
 Practice refactoring HTML & CSS code by updating the HTML with semantic tags, minimizing CSS rule redundancy, and testing for potential broken code.
 
-## Purpose
+## Goals
 
-- Practice making web pages more accessible by replacing HTML tags with HTML5 semantic tags.
-- Learn when a class or id is necessary when creating and styling HTML elements.
-- Practice combining CSS rules to reduce code redundancy.
-- Review all functionality of the web page and fix any potential bugs.
-- Practice the 'Scout Rule' by leaving the code a little cleaner than when you found it.
+- Replaced header and footer divs with `<header>` and `<footer>` tags.
+- Added a title.
+- Fixed broken page anchor links in header.
+- Broke down the main content using appropiate semantic tags. `<section>, <main>, <aside>`
+- Added alt text to all images to amke them more accessible.
+- Updated copyright year in footer.
+- Combined CSS selectors to reduce redudancy in code.
+
+## Usage
+
+The following image shows the web application's appearance:
+![Horiseon website](assets/images/horiseon.png)
 
 ## Technologies
 
@@ -16,30 +23,3 @@ Practice refactoring HTML & CSS code by updating the HTML with semantic tags, mi
 - Git
 - HTML5
 - CSS
-
-## Goals
-
-### Technical Acceptance
-
-- Application's links all function correctly.
-- Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
-- Application's CSS file is properly commented.
-
-### Deployment
-
-- Application deploys at live URL.
-- Application loads with no errors.
-- Application GitHub URL submitted.
-- GitHub repository that contains application code.
-
-### Application Quality
-
-- Application resembles (at least 90%) screenshots provided in the assignment instructions.
-
-### Repository Quality
-
-- Repository has a unique name.
-- Repository follows best practices for file structure and naming conventions.
-- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-- Repository contains multiple descriptive commit messages.
-- Repository contains quality README file with description, screenshot, and link to deployed application.
